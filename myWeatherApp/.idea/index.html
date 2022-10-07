@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myWeather</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="body">
+    <a href="saved.html"><button class="savedForecast">Saved Forecasts</button></a>
+    <section class="main">
+        <div class="main-temp">
+            <p class="myLogo"><img style="width: 150px"src="MyWeatherApp.png"></p>
+            <p class="main-temp-info">
+                <span class="temp"></span>
+                <span class="city"></span>
+                <span class="icon"></span>
+            </p>
+        </div>
+        <div class="main-info">
+            <div class="search-section">
+                <input type="text" class="searchBar" placeholder="Search City..."/>
+                <button class="search-btn" onclick="search()"><i class="fa fa-search" style="font-size:24px; color: white"></i></button>
+            </div>
+            <hr />
+            <p><a href="#" onclick="setLocation('Birmingham')">Birmingham</a></p>
+            <p><a href="#" onclick="setLocation('Manchester')">Manchester</a></p>
+            <p><a href="#" onclick="setLocation('New York')">New York</a></p>
+            <p><a href="#" onclick="setLocation('Lagos')">Lagos</a></p>
+            <hr />
+            <h4>Weather Details</h4>
+            <p class="description">Description</p>
+            <p class="humidity">humidity</p>
+            <p class="wind">Wind</p>
+            <p class="date">Date</p>
+
+            <hr />
+            <button class="save-forecast" onclick="saveForecast()">Save Forecast</button>
+        </div>
+    </section>
+</div>
+
+
+</body>
+</html>
